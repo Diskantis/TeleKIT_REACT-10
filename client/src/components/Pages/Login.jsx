@@ -1,9 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { observer } from "mobx-react-lite";
-// import { Context } from "../../index";
 
-// import { login } from "../../http/userAPI";
 import { MAIN_ROUTE } from "../../routers/Routes";
 
 import { styled } from "styled-components";

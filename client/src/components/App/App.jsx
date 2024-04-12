@@ -6,14 +6,14 @@ import AppRouter from "../../routers/AppRouter";
 import Header from "../Layouts/Header";
 import Footer from "../Layouts/Footer";
 
-// import { getUsers } from "../../features/Users/usersSlice";
+import { getUsers } from "../../features/Users/usersSlice";
 
 const App = () => {
-  // const dispatch = useDispatch();
-  //
-  // useEffect(() => {
-  //   dispatch(getUsers());
-  // }, [dispatch]);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getUsers());
+  }, [dispatch]);
 
   return (
     <BrowserRouter>
