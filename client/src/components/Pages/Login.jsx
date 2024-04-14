@@ -15,7 +15,7 @@ import SideBar from "../Layouts/SideBar";
 import InputAuth from "../CompUI/InputAuth";
 import { BtnSubmit } from "../CompUI/Button";
 import { useDispatch } from "react-redux";
-import { authenticated } from "../../features/Users/usersSlice";
+import { authenticated, loginUsers } from "../../features/Users/usersSlice";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -30,6 +30,8 @@ const Login = () => {
       // await login(email, password);
 
       dispatch(authenticated(true));
+      // dispatch(loginUsers);
+
       navigate(MAIN_ROUTE);
     } catch (e) {
       alert(e.response.data.message);
