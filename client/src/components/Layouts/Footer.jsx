@@ -11,6 +11,8 @@ const Footer = ({ children }) => {
   return <FooterStyled>{children}</FooterStyled>;
 };
 
+export default Footer;
+
 const FooterStyled = styled.div`
   width: 100%;
   height: 30px;
@@ -22,5 +24,3 @@ const FooterStyled = styled.div`
   ${mixinFontFamily("Roboto")}
   ${mixinFontParams({ size: "1rem", weight: 600, spacing: "2px" })}
 `;
-
-export default Footer;

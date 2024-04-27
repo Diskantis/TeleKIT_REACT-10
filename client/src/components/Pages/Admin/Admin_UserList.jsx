@@ -1,7 +1,16 @@
 import React from "react";
 
-const AdminUserList = () => {
-  return <div>AdminUserList</div>;
+import Page from "../../Layouts/Page";
+import SideBar from "../../Layouts/SideBar";
+import Content from "../../Layouts/Content";
+
+const Admin_UserList = () => {
+  return (
+    <Page>
+      <SideBar />
+      <Content title="Административная панель."></Content>
+    </Page>
+  );
 };
 
-export default AdminUserList;
+export default Admin_UserList;

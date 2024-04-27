@@ -1,46 +1,42 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
-import { MAIN_ROUTE } from "../../routers/Routes";
-
 import { styled } from "styled-components";
-import {
-  ContentContainer,
-  Content,
-  ContentTitle,
-  Page,
-} from "../../styles/style";
 import { mixinFontParams } from "../../styles/style_constants";
-import SideBar from "../Layouts/SideBar";
+
 import InputAuth from "../CompUI/InputAuth";
-import { BtnSubmit } from "../CompUI/Button";
-import { useDispatch } from "react-redux";
-import { authenticated, loginUsers } from "../../features/Users/usersSlice";
+
+import Page from "../Layouts/Page";
+import SideBar from "../Layouts/SideBar";
+import Content from "../Layouts/Content";
+
+import {
+  useLazyCurrentQuery,
+  useLoginMutation,
+} from "../../app/services/userApi";
+import ButtonSubmit from "../CompUI/ButtonSubmit";
 
 const Login = () => {
-  const dispatch = useDispatch();
+  const [login, { isLoading }] = useLoginMutation();
   const navigate = useNavigate();
+  const [triggerCurrentQuery] = useLazyCurrentQuery();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [selInput, setSelInput] = useState("");
 
-  const click = async () => {
+  const { control, handleSubmit, reset } = useForm({
+    mode: "onChange",
+  });
+
+  const onSubmit = async (data) => {
     try {
-      // await login(email, password);
-
-      dispatch(authenticated(true));
-      // dispatch(loginUsers);
-
-      navigate(MAIN_ROUTE);
-    } catch (e) {
-      alert(e.response.data.message);
+      await login(data).unwrap();
+      await triggerCurrentQuery();
+      navigate("/");
+      reset();
+    } catch (err) {
+      console.log(err);
     }
-  };
-
-  const visible = () => {
-    if (email === "") setSelInput("");
-    if (password === "") setSelInput("");
   };
 
   return (
@@ -49,37 +45,39 @@ const Login = () => {
         <SideTitle>ТЕЛЕВИЗИОННЫЙ ЖУРНАЛИСТСКИЙ КОМПЛЕКТ</SideTitle>
         <SideAuthor>by Zajkov Mikhail</SideAuthor>
       </SideBar>
-      <Content onClick={() => visible()}>
-        <ContentTitle>Авторизация</ContentTitle>
-        <ContentContainer>
-          <InputsContainer onClick={(e) => e.stopPropagation()}>
-            <InputAuth
-              type="text"
-              name="email"
-              selInput={selInput}
-              value={email}
-              onFocus={() => setSelInput("email")}
-              onChange={(e) => setEmail(e.target.value)}
-            >
-              Email
-            </InputAuth>
-            <InputAuth
-              type="password"
-              name="password"
-              selInput={selInput}
-              value={password}
-              onFocus={() => setSelInput("password")}
-              onChange={(e) => setPassword(e.target.value)}
-            >
-              Пароль
-            </InputAuth>
-          </InputsContainer>
-          <BtnSubmit onClick={click}>Войти</BtnSubmit>
-        </ContentContainer>
+      <Content title="Авторизация">
+        <InputsForm onSubmit={handleSubmit(onSubmit)}>
+          <InputAuth
+            control={control}
+            name="email"
+            label="Email"
+            type="text"
+            selInput={selInput}
+            onFocus={() => setSelInput("email")}
+            required="Обязательное поле"
+          />
+          <InputAuth
+            control={control}
+            name="password"
+            label="Пароль"
+            type="password"
+            selInput={selInput}
+            onFocus={() => setSelInput("password")}
+            required="Обязательное поле"
+          />
+          {/*<ErrorMessages error={error} />*/}
+          <div>
+            <ButtonSubmit type="submit" isLoading={isLoading}>
+              Войти
+            </ButtonSubmit>
+          </div>
+        </InputsForm>
       </Content>
     </Page>
   );
 };
+
+export default Login;
 
 const SideTitle = styled.p`
   padding-right: 75px;
@@ -92,9 +90,7 @@ const SideAuthor = styled.small`
   padding-left: 15px;
 `;
 
-const InputsContainer = styled.div`
+const InputsForm = styled.form`
   width: 50%;
   margin-top: 50px;
 `;
-
-export default Login;

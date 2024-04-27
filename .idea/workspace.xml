@@ -7,7 +7,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="init" />
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/recipientApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/userApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/utils/format-to-client-date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/App/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/Input.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth_1.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/errorMessages.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/Container.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/Content.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/Form.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/Page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Auth.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Equipments/Equipment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Login_1.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Recipients/Recipient.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/middleware/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routers/Routers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/prisma/TeleKIT_230424.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/services/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/ButtonSubmit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/App/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Clock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Clock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/SideMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Equipments/Equipments.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Kits/KitPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Kits/Kits.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Kits/Kits.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Recipients/RecipientList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Recipients/RecipientList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Recipients/RecipientNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Recipients/RecipientNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Schedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Schedule.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/Users/usersSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routers/AppRouter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routers/Routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,17 +80,34 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
-        <option value="CSS File" />
         <option value="JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6c3d35e49ecc20989944a44c1a06eb45150bb6b2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Diskantis&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Diskantis/TeleKIT_REACT-10.git&quot;,
+    &quot;accountId&quot;: &quot;4eece7e6-50fc-4830-aa44-a154f3633aa2&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,6 +121,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
@@ -50,9 +132,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/IT_PROJECT/TeleKIT_REACT-10&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.6.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.7&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/3_IT PROGER/1_PROJECT/1_HTML&amp;CSS/1_REACT/TeleKIT_REACT-10/client/src/components/Pages&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -60,13 +143,14 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.client.executor&quot;: &quot;Run&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.server.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -77,19 +161,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client\src\components\CompUI" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client\src\components\Layouts" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client\src\styles" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Pages" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\CompUI" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Pages\Recipients" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Layouts" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\server" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client\src" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client\src\stores" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\server\prisma" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\App" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\styles" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client_2\src\components\App" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -100,33 +186,18 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/server/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="server" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.server" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,6 +218,17 @@
       <workItem from="1712557290119" duration="43915000" />
       <workItem from="1712811820129" duration="20112000" />
       <workItem from="1712847392096" duration="664000" />
+      <workItem from="1713088614573" duration="12253000" />
+      <workItem from="1713107086905" duration="9331000" />
+      <workItem from="1713164085667" duration="2938000" />
+      <workItem from="1713206318422" duration="1811000" />
+      <workItem from="1713443094493" duration="1010000" />
+      <workItem from="1713551063208" duration="4481000" />
+      <workItem from="1713679399006" duration="22914000" />
+      <workItem from="1713793182821" duration="11257000" />
+      <workItem from="1713852282439" duration="3531000" />
+      <workItem from="1713880002665" duration="5945000" />
+      <workItem from="1714200145015" duration="543000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

@@ -14,42 +14,32 @@ import BackSVG from "../Icons/BackSVG";
 import DateNow from "../CompUI/DateNow";
 import Clock from "../CompUI/Clock";
 
-import { LOGIN_ROUTE, MAIN_ROUTE } from "../../routers/Routes";
+import { Paths } from "../../routers/Routers";
 
 const Header = () => {
   const navigate = useNavigate();
 
-  // const lastName = localStorage.getItem("last_name");
-  // const firstName = localStorage.getItem("first_name");
-  // const surName = localStorage.getItem("sur_name");
-
   const logOut = () => {
-    // user.setUser({});
-    // user.setIsAuth(false);
-    navigate(LOGIN_ROUTE);
-    // localStorage.clear();
+    navigate(Paths.LOGIN_ROUTE);
   };
 
   return (
     <HeaderStyled>
       <HeaderNav>
         <LogoutSVG active="true" onClick={() => logOut()} />
-        <LogoLink to={MAIN_ROUTE}>TeleKIT</LogoLink>
+        <LogoLink to={Paths.MAIN_ROUTE}>TeleKIT</LogoLink>
         <BackSVG active="true" onClick={() => navigate(-1)} />
       </HeaderNav>
-      )
       <HeadBar>
-        <AuthUser>
-          {/*{user.isAuth*/}
-          {/*  ? `Пользователь: ${lastName} ${firstName[0]}.${surName[0]}.`*/}
-          {/*  : ""}*/}
-        </AuthUser>
+        <AuthUser></AuthUser>
         <DateNow />
         <Clock />
       </HeadBar>
     </HeaderStyled>
   );
 };
+
+export default Header;
 
 const HeaderStyled = styled.div`
   width: 100%;
@@ -98,5 +88,3 @@ const LogoLink = styled(Link)`
     text-decoration-line: none;
   }
 `;
-
-export default Header;

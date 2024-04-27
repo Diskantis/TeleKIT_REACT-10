@@ -21,6 +21,8 @@ const SideMenu = ({ items }) => {
   );
 };
 
+export default SideMenu;
+
 const SideMenuULStyled = styled.ul`
   display: flex;
   flex-direction: column;
@@ -47,5 +49,3 @@ const SideMenuItemStyled = styled.a`
   cursor: pointer;
   gap: 10px;
 `;
-
-export default SideMenu;

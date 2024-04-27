@@ -14,7 +14,6 @@ const Clock = () => {
 
     return () => {
       clearInterval(interval);
-      console.log("cleaning...");
     };
   }, []);
 

@@ -1,34 +1,50 @@
 import React from "react";
-import { useController } from "react-hook-form";
 
 import { styled } from "styled-components";
 import {
   Color,
-  mixinFontFamily,
   mixinFontParams,
+  mixinFontFamily,
 } from "../../styles/style_constants";
 
-const InputAuth = ({ name, label, selInput, type, control }) => {
-  const { field } = useController({
-    name,
-    control,
-  });
+import { useController } from "react-hook-form";
+
+const InputAuth = ({
+  name,
+  label,
+  type,
+  control,
+  required = "",
+  endContent,
+  // selInput,
+}) => {
+  const {
+    field,
+    fieldState: { invalid },
+    formState: { errors },
+  } = useController({ name, control, rules: { required } });
+
   return (
     <InputContainer>
       <Input
         id={name}
         name={field.name}
         type={type}
-        value={field.value}
         selected={selInput}
+        value={field.value}
+        isInvalid={invalid}
         onChange={field.onChange}
+        onBlur={field.onBlur}
+        errorMessage={`${errors[name]?.message ?? ""}`}
+        endContent={endContent}
       ></Input>
-      <Label>{label}</Label>
+      <Label>
+        {/*name={field.name} selected={selInput} value={field.value}*/}
+        {label}
+      </Label>
     </InputContainer>
   );
 };
-
-export default InputAuth;
 
 const InputContainer = styled.div`
   width: 100%;
@@ -78,3 +94,5 @@ const Label = styled.label`
     props.selected === props.name || props.value !== "" ? "60px" : "34px"};
   transition: all 0.15s ease-out;
 `;
+
+export default InputAuth;

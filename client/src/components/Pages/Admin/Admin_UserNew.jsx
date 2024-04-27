@@ -1,7 +1,16 @@
 import React from "react";
 
-const AdminUserNew = () => {
-  return <div>AdminUserNew</div>;
+import Page from "../../Layouts/Page";
+import SideBar from "../../Layouts/SideBar";
+import Content from "../../Layouts/Content";
+
+const Admin_UserNew = () => {
+  return (
+    <Page>
+      <SideBar />
+      <Content title="Административная панель."></Content>
+    </Page>
+  );
 };
 
-export default AdminUserNew;
+export default Admin_UserNew;

@@ -4,13 +4,13 @@ import Page from "../../Layouts/Page";
 import SideBar from "../../Layouts/SideBar";
 import Content from "../../Layouts/Content";
 
-const EquipmentNew = () => {
+const Equipment = () => {
   return (
     <Page>
       <SideBar />
-      <Content title="Новое оборудование."></Content>
+      <Content title="Оборудование."></Content>
     </Page>
   );
 };
 
-export default EquipmentNew;
+export default Equipment;

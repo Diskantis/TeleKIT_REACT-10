@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-// const { prisma } = require("../prisma/prisma-client");
+// const { prisma } = require("../prisma/prisma-client_1");
 //
 // const authMiddleware = async (req, res, next) => {
 //   try {
@@ -22,12 +22,12 @@
 //
 // module.exports = { authMiddleware };
 
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 const authMiddleware = (req, res, next) => {
   // Получить токен из заголовка Authorization
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
   // Проверяем, есть ли токен
   if (!token) {
@@ -37,7 +37,7 @@ const authMiddleware = (req, res, next) => {
   // Проверяем токен
   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
     if (err) {
-      return res.status(403).json({ error: 'Invalid token' });
+      return res.status(403).json({ error: "Invalid token" });
     }
 
     req.user = user;
