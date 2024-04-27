@@ -2,16 +2,16 @@ import React from "react";
 
 import { Paths } from "../../routers/Routers";
 
+import Page from "../Layouts/Page";
+import SideBar from "../Layouts/SideBar";
+import SideMenu from "../Layouts/SideMenu";
+import Content from "../Layouts/Content";
+
 import CalendarSVG from "../Icons/CalendarSVG";
 import KitSVG from "../Icons/KitSVG";
 import CameraSVG from "../Icons/CameraSVG";
 import PeopleSVG from "../Icons/PeopleSVG";
 import AdminSVG from "../Icons/AdminSVG";
-
-import Page from "../Layouts/Page";
-import SideBar from "../Layouts/SideBar";
-import SideMenu from "../Layouts/SideMenu";
-import Content from "../Layouts/Content";
 
 const Main = () => {
   return (

@@ -1,42 +1,51 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
 import { styled } from "styled-components";
 import { mixinFontParams } from "../../styles/style_constants";
 
-import InputAuth from "../CompUI/InputAuth";
-
 import Page from "../Layouts/Page";
 import SideBar from "../Layouts/SideBar";
 import Content from "../Layouts/Content";
+
+import InputAuth from "../CompUI/InputAuth";
+import ButtonSubmit from "../CompUI/ButtonSubmit";
 
 import {
   useLazyCurrentQuery,
   useLoginMutation,
 } from "../../app/services/userApi";
-import ButtonSubmit from "../CompUI/ButtonSubmit";
 
 const Login = () => {
-  const [login, { isLoading }] = useLoginMutation();
-  const navigate = useNavigate();
-  const [triggerCurrentQuery] = useLazyCurrentQuery();
-
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [selInput, setSelInput] = useState("");
 
-  const { control, handleSubmit, reset } = useForm({
-    mode: "onChange",
-  });
+  const [login, { isLoading }] = useLoginMutation();
+  const [triggerCurrentQuery] = useLazyCurrentQuery();
+  const navigate = useNavigate();
 
-  const onSubmit = async (data) => {
+  const resetForm = () => {
+    setEmail("");
+    setPassword("");
+    setSelInput("");
+  };
+
+  const click = async () => {
     try {
-      await login(data).unwrap();
-      await triggerCurrentQuery();
+      await login({ email, password }).unwrap();
+      await triggerCurrentQuery().unwrap();
       navigate("/");
-      reset();
+      resetForm();
     } catch (err) {
-      console.log(err);
+      alert(err.data.message);
+      resetForm();
     }
+  };
+
+  const visible = () => {
+    if (email === "") setSelInput("");
+    if (password === "") setSelInput("");
   };
 
   return (
@@ -45,33 +54,32 @@ const Login = () => {
         <SideTitle>ТЕЛЕВИЗИОННЫЙ ЖУРНАЛИСТСКИЙ КОМПЛЕКТ</SideTitle>
         <SideAuthor>by Zajkov Mikhail</SideAuthor>
       </SideBar>
-      <Content title="Авторизация">
-        <InputsForm onSubmit={handleSubmit(onSubmit)}>
+      <Content title="Авторизация" onClick={() => visible()}>
+        <InputsContainer onClick={(e) => e.stopPropagation()}>
           <InputAuth
-            control={control}
-            name="email"
-            label="Email"
             type="text"
+            name="email"
             selInput={selInput}
+            value={email}
             onFocus={() => setSelInput("email")}
-            required="Обязательное поле"
-          />
+            onChange={(e) => setEmail(e.target.value)}
+          >
+            Email
+          </InputAuth>
           <InputAuth
-            control={control}
-            name="password"
-            label="Пароль"
             type="password"
+            name="password"
             selInput={selInput}
+            value={password}
             onFocus={() => setSelInput("password")}
-            required="Обязательное поле"
-          />
-          {/*<ErrorMessages error={error} />*/}
-          <div>
-            <ButtonSubmit type="submit" isLoading={isLoading}>
-              Войти
-            </ButtonSubmit>
-          </div>
-        </InputsForm>
+            onChange={(e) => setPassword(e.target.value)}
+          >
+            Пароль
+          </InputAuth>
+        </InputsContainer>
+        <div>
+          <ButtonSubmit name="Войти" onClick={click} isLoading={isLoading} />
+        </div>
       </Content>
     </Page>
   );
@@ -90,7 +98,7 @@ const SideAuthor = styled.small`
   padding-left: 15px;
 `;
 
-const InputsForm = styled.form`
+const InputsContainer = styled.div`
   width: 50%;
   margin-top: 50px;
 `;

@@ -6,8 +6,12 @@ import {
   mixinFontFamily,
 } from "../../styles/style_constants";
 
-const ButtonSubmit = ({ children, type }) => {
-  return <ButtonSubStyled type={type}>{children}</ButtonSubStyled>;
+const ButtonSubmit = ({ name, type, onClick }) => {
+  return (
+    <ButtonSubStyled type={type} onClick={onClick}>
+      {name}
+    </ButtonSubStyled>
+  );
 };
 
 export default ButtonSubmit;

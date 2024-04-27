@@ -6,11 +6,11 @@ import {
   mixinFontFamily,
 } from "../../styles/style_constants";
 
-const InputCreate = ({ children, value, type, width, ...props }) => {
+const InputCreate = ({ name, value, type, width, ...props }) => {
   if (type === "tel") value = value.replace(/[^+\d]/g, "");
   return (
     <div>
-      <LabelCreate>{children}</LabelCreate>
+      <LabelCreate>{name}</LabelCreate>
       <InputCreateStyled title={value} value={value} width={width} {...props} />
     </div>
   );

@@ -1,17 +1,15 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { styled } from "styled-components";
 import { Color } from "../../styles/style_constants";
 
 const SideMenu = ({ items }) => {
-  const navigate = useNavigate();
-
   return (
     <SideMenuULStyled>
       {items.map((item) => (
         <SideMenuLIItemStyled key={item.name}>
-          <SideMenuItemStyled onClick={() => navigate(item.link)}>
+          <SideMenuItemStyled to={item.link}>
             {item.icon}
             {item.name}
           </SideMenuItemStyled>
@@ -40,7 +38,7 @@ const SideMenuLIItemStyled = styled.li`
   }
 `;
 
-const SideMenuItemStyled = styled.a`
+const SideMenuItemStyled = styled(Link)`
   display: flex;
   align-items: center;
   margin-left: 15px;

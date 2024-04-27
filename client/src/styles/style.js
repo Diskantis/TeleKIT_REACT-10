@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
+
 import { Color } from "./style_constants";
 
 export const GlobalStyle = createGlobalStyle`

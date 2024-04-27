@@ -7,10 +7,11 @@ import { store } from "./app/store";
 
 import { GlobalStyle } from "./styles/style";
 
-import App from "./components/App/App";
+import App from "./app/App";
+
+// Paths & Rages
 import { Paths } from "./routers/Routers";
 
-// import Auth from "./components/Pages/Auth";
 import Login from "./components/Pages/Login";
 
 import Main from "./components/Pages/Main";
@@ -22,24 +23,21 @@ import Admin from "./components/Pages/Admin/Admin";
 import AdminUserList from "./components/Pages/Admin/Admin_UserList";
 import AdminUserNew from "./components/Pages/Admin/Admin_UserNew";
 
-import Equipment from "./components/Pages/Equipments/Equipment";
+import Equipments from "./components/Pages/Equipments/Equipments";
 import EquipmentNew from "./components/Pages/Equipments/EquipmentNew";
 import EquipmentList from "./components/Pages/Equipments/EquipmentList";
 
-import Recipient from "./components/Pages/Recipients/Recipient";
+import Recipients from "./components/Pages/Recipients/Recipients";
 import RecipientNew from "./components/Pages/Recipients/RecipientNew";
 import RecipientList from "./components/Pages/Recipients/RecipientList";
+import AuthGuard from "./features/authGuard";
 
 const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <App />,
-    children: [{ path: Paths.LOGIN_ROUTE, element: <Login /> }],
-  },
   {
     path: "/",
     element: <App />,
     children: [
+      { path: Paths.LOGIN_ROUTE, element: <Login /> },
       { path: Paths.MAIN_ROUTE, element: <Main /> },
       { path: Paths.SCHEDULE_ROUTE, element: <Schedule /> },
       { path: Paths.KITS_ROUTE, element: <Kits /> },
@@ -47,13 +45,13 @@ const router = createBrowserRouter([
         path: Paths.ADMIN_ROUTE,
         element: <Admin />,
         children: [
-          { path: Paths.ADMIN_USER_LIST_ROUTE, element: <AdminUserList /> },
           { path: Paths.ADMIN_USER_NEW_ROUTE, element: <AdminUserNew /> },
+          { path: Paths.ADMIN_USER_LIST_ROUTE, element: <AdminUserList /> },
         ],
       },
       {
         path: Paths.EQUIPMENTS_ROUTE,
-        element: <Equipment />,
+        element: <Equipments />,
         children: [
           { path: Paths.EQUIPMENT_NEW_ROUTE, element: <EquipmentNew /> },
           { path: Paths.EQUIPMENT_LIST_ROUTE, element: <EquipmentList /> },
@@ -61,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path: Paths.RECIPIENT_ROUTE,
-        element: <Recipient />,
+        element: <Recipients />,
         children: [
           { path: Paths.RECIPIENT_NEW_ROUTE, element: <RecipientNew /> },
           { path: Paths.RECIPIENT_LIST_ROUTE, element: <RecipientList /> },
@@ -78,7 +76,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <GlobalStyle />
-      <RouterProvider router={router} />
+      <AuthGuard>
+        <RouterProvider router={router} />
+      </AuthGuard>
     </Provider>
   </React.StrictMode>,
 );

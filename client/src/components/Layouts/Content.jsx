@@ -46,5 +46,5 @@ export const ContentContainerStyled = styled.div`
   background-color: ${Color.page_bg};
   font-size: 16px;
   margin-top: 10px;
-  //padding: 0 20px 20px;
+  padding: 0 20px 20px;
 `;

@@ -9,7 +9,7 @@ import {
 } from "../../styles/style_constants";
 
 const InputSelect = ({
-  children,
+  name,
   width,
   value,
   options,
@@ -26,7 +26,7 @@ const InputSelect = ({
 
   return (
     <SelectCreate {...props}>
-      <LabelCreate>{children}</LabelCreate>
+      <LabelCreate>{name}</LabelCreate>
       <SelectCreate ref={bodyRef} width={width} onClick={() => setOpen(!open)}>
         <SelectHeader
           value={role}

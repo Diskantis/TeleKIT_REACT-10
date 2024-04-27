@@ -3,14 +3,14 @@ import { BASE_URL } from "../../routers/Routers";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: `${BASE_URL}/api`,
-  // prepareHeaders: (headers, { getState }) => {
-  //   const token = getState().auth.token || localStorage.getItem("token");
-  //
-  //   if (token) {
-  //     headers.set("authorization", `Bearer ${token}`);
-  //   }
-  //   return headers;
-  // },
+  prepareHeaders: (headers, { getState }) => {
+    const token = getState().user.token || localStorage.getItem("token");
+
+    if (token) {
+      headers.set("authorization", `Bearer ${token}`);
+    }
+    return headers;
+  },
 });
 
 const baseQueryWithRetry = retry(baseQuery, { maxRetries: 1 });

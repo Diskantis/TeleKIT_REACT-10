@@ -23,7 +23,7 @@ const uploadStorage = multer({ storage: storage });
 // Роуты User
 router.post("/users/register", UsersController.register);
 router.post("/users/login", UsersController.login);
-router.get("/users/", UsersController.getAllUsers); //authMiddleware,
+router.get("/users", authMiddleware, UsersController.getAllUsers);
 router.get("/users/current", authMiddleware, UsersController.getCurrentUser);
 router.put(
   "/users/edit/:id",
@@ -33,7 +33,7 @@ router.put(
 );
 router.delete("/users/remove/:id", authMiddleware, UsersController.deleteUser);
 
-// Роуты Recipient
+// Роуты Recipients
 router.get(
   "/recipients",
   authMiddleware,

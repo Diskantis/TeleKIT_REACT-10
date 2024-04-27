@@ -21,6 +21,7 @@ const Header = () => {
 
   const logOut = () => {
     navigate(Paths.LOGIN_ROUTE);
+    localStorage.clear();
   };
 
   return (
