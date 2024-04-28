@@ -1,34 +1,21 @@
 import React from "react";
-import { useController } from "react-hook-form";
-
 import { styled } from "styled-components";
 import {
   Color,
-  mixinFontFamily,
   mixinFontParams,
+  mixinFontFamily,
 } from "../../styles/style_constants";
 
-const InputAuth = ({ name, label, selInput, type, control }) => {
-  const { field } = useController({
-    name,
-    control,
-  });
+const InputAuth = ({ children, name, value, selInput, ...props }) => {
   return (
     <InputContainer>
-      <Input
-        id={name}
-        name={field.name}
-        type={type}
-        value={field.value}
-        selected={selInput}
-        onChange={field.onChange}
-      ></Input>
-      <Label>{label}</Label>
+      <Input name={name} selected={selInput} value={value} {...props}></Input>
+      <Label name={name} selected={selInput} value={value}>
+        {children}
+      </Label>
     </InputContainer>
   );
 };
-
-export default InputAuth;
 
 const InputContainer = styled.div`
   width: 100%;
@@ -78,3 +65,5 @@ const Label = styled.label`
     props.selected === props.name || props.value !== "" ? "60px" : "34px"};
   transition: all 0.15s ease-out;
 `;
+
+export default InputAuth;

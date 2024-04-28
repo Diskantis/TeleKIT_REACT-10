@@ -5,7 +5,7 @@ import SideBar from "../../Layouts/SideBar";
 import SideMenu from "../../Layouts/SideMenu";
 import Content from "../../Layouts/Content";
 
-import { Paths } from "../../../routers/Routers";
+import { Paths } from "../../../routers";
 
 import KitSVG from "../../Icons/KitSVG";
 import EmployeeSVG from "../../Icons/EmployeeSVG";

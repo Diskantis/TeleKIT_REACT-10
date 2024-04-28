@@ -7,115 +7,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/app/middleware/authMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/app/services/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/app/services/recipientApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/app/services/userApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/app/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/app/utils/format-to-client-date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/App/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/ButtonSubmit.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/Clock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/DateNow.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/InputAuth.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/InputCreate.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/InputSelect.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/CompUI/useFormHook.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/AdminSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/BackSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/CalendarSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/CameraSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/DeleteSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/EditSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/EmployeeSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/KitSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/LogoutSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/MainSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/PeopleSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Icons/ScheduleSVG.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/Container.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/Content.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/Form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/Page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Admin/Admin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Admin/Admin_UserList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Admin/Admin_UserNew.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Auth.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Equipments/EquipmentList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Equipments/EquipmentNew.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Equipments/Equipments.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Kits/Kits.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Recipients/RecipientList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Recipients/RecipientNew.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Recipients/Recipients.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/components/Pages/Schedule.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/routers/Routers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/src/styles/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_bro/yarn.lock" afterDir="false" />
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="23.04.24 Add Middleware">
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_2_1714292893086.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_3_1714297114366.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Button.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Clock.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/DateNow.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputCreate.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputSelect.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/AdminSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/BackSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/CalendarSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/CameraSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/DeleteSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/EditSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/EmployeeSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/KitSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/LogoutSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/MainSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/PeopleSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/ScheduleSVG.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/SideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/SideMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/SideMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/TableUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client_bro/src/components/Layouts/TableUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Users/usersSlice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routers/AppRouter.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routers/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routers/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/style_constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/client_bro/src/styles/style_constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/App/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Input.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth_1.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/LogoutSVG.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Icons/LogoutSVG.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Auth.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login_1.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authGuard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/authGuard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/userSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/middleware/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routers/Routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/usersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/usersController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +57,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Diskantis&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Diskantis/TeleKIT_REACT-10.git&quot;,
+    &quot;accountId&quot;: &quot;4eece7e6-50fc-4830-aa44-a154f3633aa2&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -161,9 +93,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/IT_PROJECT/TeleKIT_REACT-10/client_bro/src/components/CompUI&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.6.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.7&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/3_IT PROGER/1_PROJECT/1_HTML&amp;CSS/1_REACT/TeleKIT_REACT-10.1&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -177,7 +110,7 @@
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -195,11 +128,11 @@
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\Pages\Equipments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\app" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\App" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_app\src" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\server" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -241,6 +174,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -261,6 +201,9 @@
       <workItem from="1712811820129" duration="20112000" />
       <workItem from="1712847392096" duration="89929000" />
       <workItem from="1714035661741" duration="521000" />
+      <workItem from="1714214046447" duration="7457000" />
+      <workItem from="1714234791073" duration="1163000" />
+      <workItem from="1714288840852" duration="8661000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

@@ -15,6 +15,7 @@ import {
   useLazyCurrentQuery,
   useLoginMutation,
 } from "../../app/services/userApi";
+import { Paths } from "../../routers";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -35,7 +36,7 @@ const Login = () => {
     try {
       await login({ email, password }).unwrap();
       await triggerCurrentQuery().unwrap();
-      navigate("/");
+      navigate(Paths.MAIN_ROUTE);
       resetForm();
     } catch (err) {
       alert(err.data.message);

@@ -6,7 +6,7 @@ import Header from "../components/Layouts/Header";
 import Footer from "../components/Layouts/Footer";
 import PageContainer from "../components/Layouts/PageContainer";
 
-import { selectIsAuthenticated, selectUser } from "../features/userSlice";
+import { selectIsAuthenticated, selectUser } from "./features/userSlice";
 
 function App() {
   const isAuthenticated = useSelector(selectIsAuthenticated);

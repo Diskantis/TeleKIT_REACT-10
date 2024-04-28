@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { styled } from "styled-components";
 import {
@@ -14,32 +14,69 @@ import BackSVG from "../Icons/BackSVG";
 import DateNow from "../CompUI/DateNow";
 import Clock from "../CompUI/Clock";
 
-import { Paths } from "../../routers/Routers";
+import { Paths } from "../../routers";
+import { useSelector } from "react-redux";
+import {
+  selectCurrent,
+  selectIsAuthenticated,
+} from "../../app/features/userSlice";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  let isAuthenticated = useSelector(selectIsAuthenticated);
+  const current = useSelector(selectCurrent);
+  const isLogin = location.pathname !== Paths.LOGIN_ROUTE;
+  const isMain = location.pathname !== Paths.MAIN_ROUTE;
+
+  let lastName = "";
+  let firstName = "";
+  let surName = "";
+
+  if (isAuthenticated && current) ({ lastName, firstName, surName } = current);
 
   const logOut = () => {
-    navigate(Paths.LOGIN_ROUTE);
     localStorage.clear();
+    navigate(Paths.LOGIN_ROUTE);
   };
 
   return (
     <HeaderStyled>
-      <HeaderNav>
-        <LogoutSVG active="true" onClick={() => logOut()} />
-        <LogoLink to={Paths.MAIN_ROUTE}>TeleKIT</LogoLink>
-        <BackSVG active="true" onClick={() => navigate(-1)} />
-      </HeaderNav>
+      {!isAuthenticated ? (
+        <HeaderNav>
+          <LogoutSVG />
+          <LogoLink to={Paths.LOGIN_ROUTE}>TeleKIT</LogoLink>
+          <BackSVG />
+        </HeaderNav>
+      ) : (
+        <HeaderNav>
+          {isLogin ? (
+            <LogoutSVG active="true" onClick={() => logOut()} />
+          ) : (
+            <LogoutSVG />
+          )}
+          <LogoLink to={Paths.MAIN_ROUTE} replace>
+            TeleKIT
+          </LogoLink>
+          {isMain && isLogin ? (
+            <BackSVG active="true" onClick={() => navigate(-1)} />
+          ) : (
+            <BackSVG />
+          )}
+        </HeaderNav>
+      )}
       <HeadBar>
-        <AuthUser></AuthUser>
+        <AuthUser>
+          {isAuthenticated && isLogin
+            ? `Пользователь: ${lastName} ${firstName[0]}.${surName[0]}.`
+            : ""}
+        </AuthUser>
         <DateNow />
         <Clock />
       </HeadBar>
     </HeaderStyled>
   );
 };
-
 export default Header;
 
 const HeaderStyled = styled.div`
@@ -81,7 +118,7 @@ const LogoLink = styled(Link)`
   color: ${Color.body_text};
   ${mixinFontFamily("Roboto")}
   ${mixinFontParams({ size: "2rem", weight: 600 })}
-  transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   padding-top: 1px;
 
   &:hover {

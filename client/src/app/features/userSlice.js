@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { userApi } from "../app/services/userApi";
+import { userApi } from "../services/userApi";
 
 const initialState = {
   users_list: [],

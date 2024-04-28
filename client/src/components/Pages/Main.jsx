@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Paths } from "../../routers/Routers";
+import { Paths } from "../../routers";
 
 import Page from "../Layouts/Page";
 import SideBar from "../Layouts/SideBar";

@@ -3,15 +3,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 
-import { store } from "./app/store";
-
 import { GlobalStyle } from "./styles/style";
-
+import { store } from "./app/store";
+import { Paths } from "./routers";
 import App from "./app/App";
+import AuthGuard from "./app/features/authGuard";
 
-// Paths & Rages
-import { Paths } from "./routers/Routers";
-
+// Rages
 import Login from "./components/Pages/Login";
 
 import Main from "./components/Pages/Main";
@@ -30,14 +28,17 @@ import EquipmentList from "./components/Pages/Equipments/EquipmentList";
 import Recipients from "./components/Pages/Recipients/Recipients";
 import RecipientNew from "./components/Pages/Recipients/RecipientNew";
 import RecipientList from "./components/Pages/Recipients/RecipientList";
-import AuthGuard from "./features/authGuard";
 
 const router = createBrowserRouter([
+  {
+    path: Paths.LOGIN_ROUTE,
+    element: <App />,
+    children: [{ path: Paths.LOGIN_ROUTE, element: <Login /> }],
+  },
   {
     path: "/",
     element: <App />,
     children: [
-      { path: Paths.LOGIN_ROUTE, element: <Login /> },
       { path: Paths.MAIN_ROUTE, element: <Main /> },
       { path: Paths.SCHEDULE_ROUTE, element: <Schedule /> },
       { path: Paths.KITS_ROUTE, element: <Kits /> },

@@ -24,7 +24,8 @@ const uploadStorage = multer({ storage: storage });
 router.post("/users/register", UsersController.register);
 router.post("/users/login", UsersController.login);
 router.get("/users", authMiddleware, UsersController.getAllUsers);
-router.get("/users/current", authMiddleware, UsersController.getCurrentUser);
+// router.get("/users/current", authMiddleware, UsersController.getCurrentUser);
+router.get("/users/current", authMiddleware, UsersController.currentUser);
 router.put(
   "/users/edit/:id",
   authMiddleware,

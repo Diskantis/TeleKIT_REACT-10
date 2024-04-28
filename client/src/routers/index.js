@@ -3,7 +3,7 @@ export const BASE_URL =
 
 export const Paths = {
   LOGIN_ROUTE: "/login",
-  MAIN_ROUTE: "",
+  MAIN_ROUTE: "/",
   SCHEDULE_ROUTE: "schedule",
 
   KITS_ROUTE: "kits",

@@ -28,7 +28,7 @@ const LogoutSVGStyled = styled.svg`
   height: 35px;
   fill: ${Color.body_text};
   cursor: ${(props) => (props.$active === "true" ? "pointer" : "default")};
-  opacity: ${(props) => (props.$active ? 1 : 0)};
+  opacity: ${(props) => (props.$active === "true" ? 1 : 0)};
   transition: all 0.2s ease-out;
   &:hover {
     fill: ${Color.logo_link};

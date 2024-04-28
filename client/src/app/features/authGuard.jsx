@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentQuery } from "../app/services/userApi";
+import { useCurrentQuery } from "../services/userApi";
 
 import { Spin } from "antd";
 
