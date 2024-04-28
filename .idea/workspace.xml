@@ -7,35 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="23.04.24 Add Middleware">
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_2_1714292893086.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_3_1714297114366.png" afterDir="false" />
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 настроил аутентификацию и регистрацию">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Input.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth_1.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Icons/LogoutSVG.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Icons/LogoutSVG.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Auth.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login_1.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authGuard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/authGuard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/userSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/middleware/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routers/Routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/usersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/usersController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/services/userApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/userApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputSelect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputSelect.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="d406838d4ac9e1fafb6995f4cc4c883261180654" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -73,7 +55,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -171,6 +153,8 @@
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.server" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.server" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +187,8 @@
       <workItem from="1714035661741" duration="521000" />
       <workItem from="1714214046447" duration="7457000" />
       <workItem from="1714234791073" duration="1163000" />
-      <workItem from="1714288840852" duration="8661000" />
+      <workItem from="1714288840852" duration="15007000" />
+      <workItem from="1714306532648" duration="3049000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -229,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712846725455</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="28.04.24 настроил аутентификацию и регистрацию">
+      <option name="closed" value="true" />
+      <created>1714298104616</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714298104616</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +246,7 @@
     </ignored-roots>
     <MESSAGE value="init" />
     <MESSAGE value="110424 add Client" />
-    <option name="LAST_COMMIT_MESSAGE" value="110424 add Client" />
+    <MESSAGE value="28.04.24 настроил аутентификацию и регистрацию" />
+    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 настроил аутентификацию и регистрацию" />
   </component>
 </project>

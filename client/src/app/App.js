@@ -6,11 +6,10 @@ import Header from "../components/Layouts/Header";
 import Footer from "../components/Layouts/Footer";
 import PageContainer from "../components/Layouts/PageContainer";
 
-import { selectIsAuthenticated, selectUser } from "./features/userSlice";
+import { selectIsAuthenticated } from "./features/userSlice";
 
 function App() {
   const isAuthenticated = useSelector(selectIsAuthenticated);
-  const user = useSelector(selectUser);
   const navigate = useNavigate();
 
   useEffect(() => {

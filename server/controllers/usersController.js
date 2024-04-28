@@ -128,14 +128,32 @@ const UsersController = {
     }
   },
   /**
+   * ONE USER
+   * @route GET /api/users/:id
+   * @desc Получение "Получателя"
+   * @access Private
+   */
+  getOneUser: async (req, res) => {
+    const { id } = req.params;
+
+    try {
+      const user = await prisma.user.findUnique({
+        where: {
+          id,
+        },
+      });
+
+      res.status(200).json(user);
+    } catch {
+      res.status(500).json({ message: "Не удалось получить Получателя" });
+    }
+  },
+  /**
    * GET CURRENT USER
    * @route GET /api/users/current
    * @desc Получение текущего "Пользователя"
    * @access Private
    */
-  // getCurrentUser: async (req, res) => {
-  //   return res.status(200).json(req.user);
-  // },
   currentUser: async (req, res) => {
     const user = await prisma.user.findUnique({
       where: { id: req.user.id },

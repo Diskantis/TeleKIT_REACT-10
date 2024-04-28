@@ -2,16 +2,16 @@ import { api } from "./api";
 
 export const userApi = api.injectEndpoints({
   endpoints: (builder) => ({
-    login: builder.mutation({
+    register: builder.mutation({
       query: (userData) => ({
-        url: "/users/login",
+        url: "/users/register",
         method: "POST",
         body: userData,
       }),
     }),
-    register: builder.mutation({
+    login: builder.mutation({
       query: (userData) => ({
-        url: "/users/register",
+        url: "/users/login",
         method: "POST",
         body: userData,
       }),
