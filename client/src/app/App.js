@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
+import { Paths } from "../routers";
+
 import Header from "../components/Layouts/Header";
 import Footer from "../components/Layouts/Footer";
 import PageContainer from "../components/Layouts/PageContainer";
@@ -14,7 +16,7 @@ function App() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      navigate("/login");
+      navigate(Paths.LOGIN_ROUTE);
     }
   }, [isAuthenticated, navigate]);
 

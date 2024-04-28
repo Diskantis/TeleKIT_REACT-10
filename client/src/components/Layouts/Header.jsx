@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 import { styled } from "styled-components";
 import {
@@ -15,28 +16,36 @@ import DateNow from "../CompUI/DateNow";
 import Clock from "../CompUI/Clock";
 
 import { Paths } from "../../routers";
-import { useSelector } from "react-redux";
+
 import {
+  logout,
   selectCurrent,
   selectIsAuthenticated,
 } from "../../app/features/userSlice";
+import ProfUser from "./ProfUser";
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useDispatch();
+
   let isAuthenticated = useSelector(selectIsAuthenticated);
   const current = useSelector(selectCurrent);
+
   const isLogin = location.pathname !== Paths.LOGIN_ROUTE;
   const isMain = location.pathname !== Paths.MAIN_ROUTE;
 
   let lastName = "";
   let firstName = "";
   let surName = "";
+  let avatarUrl = "";
 
-  if (isAuthenticated && current) ({ lastName, firstName, surName } = current);
+  if (isAuthenticated && current)
+    ({ lastName, firstName, surName, avatarUrl } = current);
 
-  const logOut = () => {
-    localStorage.clear();
+  const handleLogout = () => {
+    dispatch(logout());
+    localStorage.removeItem("token");
     navigate(Paths.LOGIN_ROUTE);
   };
 
@@ -51,7 +60,7 @@ const Header = () => {
       ) : (
         <HeaderNav>
           {isLogin ? (
-            <LogoutSVG active="true" onClick={() => logOut()} />
+            <LogoutSVG active="true" onClick={handleLogout} />
           ) : (
             <LogoutSVG />
           )}
@@ -67,9 +76,16 @@ const Header = () => {
       )}
       <HeadBar>
         <AuthUser>
-          {isAuthenticated && isLogin
-            ? `Пользователь: ${lastName} ${firstName[0]}.${surName[0]}.`
-            : ""}
+          {isAuthenticated && isLogin ? (
+            <ProfUser
+              firstName={firstName}
+              lastName={lastName}
+              surName={surName}
+              avatarURL={avatarUrl}
+            />
+          ) : (
+            ""
+          )}
         </AuthUser>
         <DateNow />
         <Clock />

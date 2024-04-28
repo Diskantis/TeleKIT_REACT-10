@@ -7,13 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 настроил аутентификацию и регистрацию">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" afterDir="false" />
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 server добавил метод getOneUser">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/ProfUser.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/userApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/userApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputSelect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputSelect.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/features/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/userSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +25,8 @@
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -188,7 +187,7 @@
       <workItem from="1714214046447" duration="7457000" />
       <workItem from="1714234791073" duration="1163000" />
       <workItem from="1714288840852" duration="15007000" />
-      <workItem from="1714306532648" duration="3049000" />
+      <workItem from="1714306532648" duration="9170000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -222,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714298104616</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="28.04.24 server добавил метод getOneUser">
+      <option name="closed" value="true" />
+      <created>1714310580582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714310580582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +254,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="110424 add Client" />
     <MESSAGE value="28.04.24 настроил аутентификацию и регистрацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 настроил аутентификацию и регистрацию" />
+    <MESSAGE value="28.04.24 server добавил метод getOneUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 server добавил метод getOneUser" />
   </component>
 </project>
