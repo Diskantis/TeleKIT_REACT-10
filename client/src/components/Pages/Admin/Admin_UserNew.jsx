@@ -90,7 +90,7 @@ const Admin_UserNew = () => {
         </FormRow>
         <ButtonSubmit
           name="Зарегистрировать"
-          $create
+          width="280px"
           onClick={click}
           isLoading={isLoading}
         />

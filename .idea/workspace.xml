@@ -7,12 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 server добавил метод getOneUser">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/ProfUser.jsx" afterDir="false" />
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 добавил аватарку к current user">
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_4_1714327956484.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/features/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/userSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/BtnSub.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/ButtonSubmit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/ButtonSubmit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/useFormHook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Hooks/useFormHook.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +190,8 @@
       <workItem from="1714214046447" duration="7457000" />
       <workItem from="1714234791073" duration="1163000" />
       <workItem from="1714288840852" duration="15007000" />
-      <workItem from="1714306532648" duration="9170000" />
+      <workItem from="1714306532648" duration="11008000" />
+      <workItem from="1714326572963" duration="3095000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -229,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714310580582</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="28.04.24 добавил аватарку к current user">
+      <option name="closed" value="true" />
+      <created>1714318706821</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714318706821</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +267,7 @@
     <MESSAGE value="110424 add Client" />
     <MESSAGE value="28.04.24 настроил аутентификацию и регистрацию" />
     <MESSAGE value="28.04.24 server добавил метод getOneUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 server добавил метод getOneUser" />
+    <MESSAGE value="28.04.24 добавил аватарку к current user" />
+    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 добавил аватарку к current user" />
   </component>
 </project>

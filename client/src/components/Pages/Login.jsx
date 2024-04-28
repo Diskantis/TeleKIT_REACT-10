@@ -58,28 +58,29 @@ const Login = () => {
       <Content title="Авторизация" onClick={() => visible()}>
         <InputsContainer onClick={(e) => e.stopPropagation()}>
           <InputAuth
-            type="text"
-            name="email"
+            type="email"
+            name="Email"
             selInput={selInput}
             value={email}
             onFocus={() => setSelInput("email")}
             onChange={(e) => setEmail(e.target.value)}
-          >
-            Email
-          </InputAuth>
+          />
           <InputAuth
             type="password"
-            name="password"
+            name="Пароль"
             selInput={selInput}
             value={password}
             onFocus={() => setSelInput("password")}
             onChange={(e) => setPassword(e.target.value)}
-          >
-            Пароль
-          </InputAuth>
+          />
         </InputsContainer>
         <div>
-          <ButtonSubmit name="Войти" onClick={click} isLoading={isLoading} />
+          <ButtonSubmit
+            name="Войти"
+            width={"150px"}
+            onClick={click}
+            isLoading={isLoading}
+          />
         </div>
       </Content>
     </Page>

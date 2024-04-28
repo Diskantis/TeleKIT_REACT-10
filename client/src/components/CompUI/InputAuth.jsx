@@ -6,12 +6,12 @@ import {
   mixinFontFamily,
 } from "../../styles/style_constants";
 
-const InputAuth = ({ children, name, value, selInput, ...props }) => {
+const InputAuth = ({ type, name, value, selInput, ...props }) => {
   return (
     <InputContainer>
-      <Input name={name} selected={selInput} value={value} {...props}></Input>
-      <Label name={name} selected={selInput} value={value}>
-        {children}
+      <Input type={type} selected={selInput} value={value} {...props}></Input>
+      <Label type={type} selected={selInput} value={value}>
+        {name}
       </Label>
     </InputContainer>
   );
@@ -34,7 +34,7 @@ const Input = styled.input`
   box-shadow: none;
   border-style: none;
   border-bottom: ${(props) =>
-    props.selected === props.name || props.value !== ""
+    props.selected === props.type || props.value !== ""
       ? "2px solid #6ef439"
       : "2px solid #2196f3"};
   margin-bottom: 10px;
@@ -50,11 +50,11 @@ const Label = styled.label`
   text-align: left;
   ${mixinFontFamily("Roboto")};
   ${(props) =>
-    props.selected === props.name || props.value !== ""
+    props.selected === props.type || props.value !== ""
       ? `${mixinFontParams({ size: "0.8rem", height: "1rem" })}`
       : `${mixinFontParams({ size: "1rem", height: "1rem" })}`};
   color: ${(props) =>
-    props.selected === props.name || props.value !== ""
+    props.selected === props.type || props.value !== ""
       ? `${Color.btn_submit}`
       : `${Color.body_text}`};
   transform: translate(0, 0);
@@ -62,7 +62,7 @@ const Label = styled.label`
   position: relative;
   left: 20px;
   bottom: ${(props) =>
-    props.selected === props.name || props.value !== "" ? "60px" : "34px"};
+    props.selected === props.type || props.value !== "" ? "60px" : "34px"};
   transition: all 0.15s ease-out;
 `;
 

@@ -6,9 +6,9 @@ import {
   mixinFontFamily,
 } from "../../styles/style_constants";
 
-const ButtonSubmit = ({ name, type, onClick }) => {
+const ButtonSubmit = ({ name, type, width, onClick }) => {
   return (
-    <ButtonSubStyled type={type} onClick={onClick}>
+    <ButtonSubStyled type={type} $width={width} onClick={onClick}>
       {name}
     </ButtonSubStyled>
   );
@@ -20,7 +20,7 @@ const ButtonSubStyled = styled.button`
   ${mixinFontFamily("Roboto")}
   ${mixinFontParams({ size: "0.9rem", spacing: "0.1rem" })}
   display: inline-block;
-  width: ${(props) => (props.$create ? "280px" : "150px")};
+  width: ${(props) => props.$width};
   height: 36px;
   border: none;
   border-radius: 2px;
