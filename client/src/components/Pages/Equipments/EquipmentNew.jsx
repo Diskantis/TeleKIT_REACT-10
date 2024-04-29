@@ -1,11 +1,11 @@
 import React from "react";
 
-import FormContainer, { FormRowContainer } from "../../Layouts/FormContainer";
+import FormContainer, { FormContentStyled } from "../../Layouts/FormContainer";
 
 const EquipmentNew = () => {
   return (
     <FormContainer title="Новое оборудование.">
-      <FormRowContainer></FormRowContainer>
+      <FormContentStyled></FormContentStyled>
     </FormContainer>
   );
 };

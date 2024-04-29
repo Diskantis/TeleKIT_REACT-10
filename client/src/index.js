@@ -83,3 +83,5 @@ root.render(
     </Provider>
   </React.StrictMode>,
 );
+
+// "client": "cd ../client ; npm run start",

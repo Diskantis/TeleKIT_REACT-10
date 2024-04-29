@@ -1,15 +1,14 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
+import { Paths } from "../../../routers";
 
 import Page from "../../Layouts/Page";
 import SideBar from "../../Layouts/SideBar";
 import SideMenu from "../../Layouts/SideMenu";
 import Content from "../../Layouts/Content";
 
-import { Paths } from "../../../routers";
-
 import KitSVG from "../../Icons/KitSVG";
 import EmployeeSVG from "../../Icons/EmployeeSVG";
-import { Outlet } from "react-router-dom";
 
 const Admin = () => {
   return (

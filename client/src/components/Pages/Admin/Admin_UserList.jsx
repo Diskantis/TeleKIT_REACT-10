@@ -1,11 +1,11 @@
 import React from "react";
 
-import FormContainer, { FormRowContainer } from "../../Layouts/FormContainer";
+import FormContainer, { FormContentStyled } from "../../Layouts/FormContainer";
 
 const Admin_UserList = () => {
   return (
     <FormContainer title="Список пользователей">
-      <FormRowContainer></FormRowContainer>
+      <FormContentStyled></FormContentStyled>
     </FormContainer>
   );
 };

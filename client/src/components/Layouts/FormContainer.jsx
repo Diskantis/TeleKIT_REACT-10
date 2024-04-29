@@ -53,12 +53,3 @@ export const FormRowContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
 `;
-
-export const FormRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 20px 0;
-  row-gap: 10px;
-  column-gap: 20px;
-`;
