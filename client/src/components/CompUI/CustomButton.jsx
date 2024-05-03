@@ -1,15 +1,26 @@
-import { styled } from "styled-components";
+import React from "react";
+import styled from "styled-components/macro";
 import {
   Color,
   mixinFontParams,
   mixinFontFamily,
 } from "../../styles/style_constants";
 
-export const BtnSubmit = styled.button`
+const CustomButton = ({ name, type, width, onClick }) => {
+  return (
+    <ButtonSubStyled type={type} $width={width} onClick={onClick}>
+      {name}
+    </ButtonSubStyled>
+  );
+};
+
+export default CustomButton;
+
+const ButtonSubStyled = styled.button`
   ${mixinFontFamily("Roboto")}
   ${mixinFontParams({ size: "0.9rem", spacing: "0.1rem" })}
   display: inline-block;
-  width: ${(props) => (props.$create ? "280px" : "150px")};
+  width: ${(props) => props.$width};
   height: 36px;
   border: none;
   border-radius: 2px;
@@ -28,7 +39,7 @@ export const BtnSubmit = styled.button`
   }
 `;
 
-export const BtnEdit = styled(BtnSubmit)`
+export const BtnEdit = styled(ButtonSubStyled)`
   display: flex;
   justify-content: center;
   width: 34px;

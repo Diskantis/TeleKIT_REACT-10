@@ -1,43 +1,57 @@
-import React from "react"; //, {useEffect, useState}
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-// import {removeUser, getOneUser} from "../../stores/usersSlice";
-
-import { styled } from "styled-components";
-
-import EditSVG from "../Icons/EditSVG";
-import DeleteSVG from "../Icons/DeleteSVG";
-import { BtnDel, BtnEdit } from "../CompUI/Button";
+import styled from "styled-components/macro";
 import {
   Color,
   mixinFontParams,
   mixinFontFamily,
 } from "../../styles/style_constants";
-import { BASE_URL } from "../../routers/Routes";
 
-// import Modal from "../ComponentUI/Modal";
-// import FormUser from "./FormUser";
-// import {useGetUserQuery} from "../../api/apiSlice";
+import EditSVG from "../Icons/EditSVG";
+import DeleteSVG from "../Icons/DeleteSVG";
+import { BtnDel, BtnEdit } from "../CompUI/CustomButton";
+import Modal from "../CompUI/Modal";
+import FormEditUser from "./FormEditUser";
+
+import { BASE_URL } from "../../routers";
+
+import {
+  useDeleteUserMutation,
+  useLazyGetAllUsersQuery,
+  useLazyGetOneUserQuery,
+} from "../../app/services/userApi";
+import { selectAllUsers, selectOneUser } from "../../app/features/userSlice";
 
 const TableUsers = () => {
-  const { list_users } = useSelector((state) => state.users);
+  const navigate = useNavigate();
+  const [triggerGetAllUsers] = useLazyGetAllUsersQuery();
+  const [getOneUser, { isLoading }] = useLazyGetOneUserQuery();
+  const [deleteUser] = useDeleteUserMutation();
 
-  // const users = useSelector((state) => state.users.users_list)
-  // console.log(users)
-  // const dispatch = useDispatch();
-  //
-  // const [modalActive, setModalActive] = useState(false);
+  const users_list = useSelector(selectAllUsers);
+  const user = useSelector(selectOneUser);
 
-  const handleChange = (id) => {
-    return null;
-    // setModalActive(true);
-    // dispatch(getOneUser({id}));
-    // console.log(togUser)
+  const [modalActive, setModalActive] = useState(false);
+
+  const handleChange = async (id) => {
+    try {
+      setModalActive(true);
+      await getOneUser(id).unwrap();
+    } catch (error) {
+      console.log(error);
+    }
   };
 
-  const handleDelete = (id) => {
-    return null;
-    // dispatch(removeUser({id}));
+  const handleDelete = async (id) => {
+    try {
+      await deleteUser(id).unwrap();
+      triggerGetAllUsers().unwrap();
+      navigate("/admin/user_list");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -56,10 +70,9 @@ const TableUsers = () => {
         </tr>
       </thead>
       <tbody>
-        {list_users.map((user, index) => (
+        {users_list.map((user, index) => (
           <tr key={index + 1}>
             <TableTD>{index + 1}</TableTD>
-            {/*<TableTD>{user.avatarUrl}</TableTD>*/}
             <TableTD>
               {
                 <Avatar
@@ -82,7 +95,10 @@ const TableUsers = () => {
             <TableTD>{user.role}</TableTD>
             <TableTD>
               <BtnGroup>
-                <BtnEdit onClick={() => handleChange(user.id)}>
+                <BtnEdit
+                  onClick={() => handleChange(user.id)}
+                  isLoading={isLoading}
+                >
                   <EditSVG />
                 </BtnEdit>
                 <BtnDel onClick={() => handleDelete(user.id)}>
@@ -94,13 +110,14 @@ const TableUsers = () => {
         ))}
       </tbody>
       <tfoot></tfoot>
-      {/*<Modal*/}
-      {/*  active={modalActive}*/}
-      {/*  setActive={setModalActive}*/}
-      {/*  title="Редактирование данных пользователя"*/}
-      {/*>*/}
-      {/*  <FormUser/>*/}
-      {/*</Modal>*/}
+      <Modal
+        active={modalActive}
+        setActive={setModalActive}
+        btnName="Сохранить"
+        title="Редактирование данных пользователя"
+      >
+        {user && <FormEditUser user={user} />}
+      </Modal>
     </TableStyled>
   );
 };
@@ -123,6 +140,7 @@ const TableTH = styled.th`
   text-align: left;
   text-overflow: ellipsis;
   padding: 20px 10px 15px 10px;
+
   // id
 
   &:nth-child(1) {
@@ -262,12 +280,12 @@ const BtnGroup = styled.div`
 `;
 
 const Avatar = styled.div`
+  display: flex;
+  justify-content: right;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background: #2c2c2c;
-  background-repeat: no-repeat;
-  background-position: center;
+  transform: translateX(33%);
+  background: #2c2c2c no-repeat center;
   background-size: cover;
 `;
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { styled } from "styled-components";
+import styled from "styled-components/macro";
 import { mixinFontParams } from "../../styles/style_constants";
 
 import Page from "../Layouts/Page";
@@ -9,7 +9,7 @@ import SideBar from "../Layouts/SideBar";
 import Content from "../Layouts/Content";
 
 import InputAuth from "../CompUI/InputAuth";
-import ButtonSubmit from "../CompUI/ButtonSubmit";
+import CustomButton from "../CompUI/CustomButton";
 
 import {
   useLazyCurrentQuery,
@@ -75,7 +75,7 @@ const Login = () => {
           />
         </InputsContainer>
         <div>
-          <ButtonSubmit
+          <CustomButton
             name="Войти"
             width={"150px"}
             onClick={click}

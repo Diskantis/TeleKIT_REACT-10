@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "styled-components";
+import styled from "styled-components/macro";
 import {
   Color,
   mixinFontFamily,
@@ -48,8 +48,11 @@ export const FormContentStyled = styled.div`
   }
 `;
 
-export const FormRowContainer = styled.div`
+export const FormRow = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0;
+  row-gap: 10px;
+  column-gap: 20px;
 `;

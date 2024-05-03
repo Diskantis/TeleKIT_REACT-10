@@ -30,7 +30,7 @@ const userSlice = createSlice({
       .addMatcher(
         userApi.endpoints.getAllUsers.matchFulfilled,
         (state, action) => {
-          state.users = action.payload;
+          state.users_list = action.payload;
         },
       )
       .addMatcher(
@@ -48,5 +48,5 @@ export default userSlice.reducer;
 
 export const selectIsAuthenticated = (state) => state.user.isAuthenticated;
 export const selectCurrent = (state) => state.user.current;
-export const selectUsers = (state) => state.user.users;
-export const selectUser = (state) => state.user.user;
+export const selectAllUsers = (state) => state.user.users_list;
+export const selectOneUser = (state) => state.user.user;

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { styled } from "styled-components";
+import styled from "styled-components/macro";
 import {
   Color,
   mixinFontParams,

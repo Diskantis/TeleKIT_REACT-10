@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 
-import FormContainer from "../../Layouts/FormContainer";
+import FormContainer, { FormRow } from "../../Layouts/FormContainer";
 
 import InputCreate from "../../CompUI/InputCreate";
 import InputSelect from "../../CompUI/InputSelect";
-import ButtonSubmit from "../../CompUI/ButtonSubmit";
+import CustomButton from "../../CompUI/CustomButton";
 
-import { useRegisterMutation } from "../../../app/services/userApi";
-import { styled } from "styled-components";
+import {
+  useLazyGetAllUsersQuery,
+  useRegisterMutation,
+} from "../../../app/services/userApi";
 
 const Admin_UserNew = () => {
   const [lastName, setLastName] = useState("");
@@ -18,6 +20,7 @@ const Admin_UserNew = () => {
   const [role, setRole] = useState("ADMIN");
 
   const [register, { isLoading }] = useRegisterMutation();
+  const [triggerGetAllUsers] = useLazyGetAllUsersQuery();
 
   const resetForm = () => {
     setLastName("");
@@ -38,6 +41,7 @@ const Admin_UserNew = () => {
         password,
         role,
       }).unwrap();
+      triggerGetAllUsers().unwrap();
       resetForm();
     } catch (err) {
       alert(err.data.message);
@@ -86,7 +90,7 @@ const Admin_UserNew = () => {
           options={[{ value: "ADMIN" }, { value: "USER" }]}
         />
       </FormRow>
-      <ButtonSubmit
+      <CustomButton
         name="Зарегистрировать"
         width="280px"
         onClick={click}
@@ -97,12 +101,3 @@ const Admin_UserNew = () => {
 };
 
 export default Admin_UserNew;
-
-export const FormRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 20px 0;
-  row-gap: 10px;
-  column-gap: 20px;
-`;
