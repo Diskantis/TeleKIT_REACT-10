@@ -8,21 +8,22 @@ import Page from "../Layouts/Page";
 import SideBar from "../Layouts/SideBar";
 import Content from "../Layouts/Content";
 
-import InputAuth from "../CompUI/InputAuth";
-import CustomButton from "../CompUI/CustomButton";
+import InputAuth from "../CompUI/Inputs/InputAuth";
+import ButtonSubMUI from "../CompUI/Buttons/ButtonMUI";
 
+import { Paths } from "../../routers";
 import {
   useLazyCurrentQuery,
   useLoginMutation,
 } from "../../app/services/userApi";
-import { Paths } from "../../routers";
+import InputMui from "../CompUI/Inputs/InputMUI";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selInput, setSelInput] = useState("");
 
-  const [login, { isLoading }] = useLoginMutation();
+  const [login] = useLoginMutation();
   const [triggerCurrentQuery] = useLazyCurrentQuery();
   const navigate = useNavigate();
 
@@ -73,13 +74,16 @@ const Login = () => {
             onFocus={() => setSelInput("password")}
             onChange={(e) => setPassword(e.target.value)}
           />
+          {/*<InputMui />*/}
         </InputsContainer>
+        <InputMui />
+        <br />
         <div>
-          <CustomButton
+          <ButtonSubMUI
             name="Войти"
-            width={"150px"}
+            width="120px"
+            variant="contained"
             onClick={click}
-            isLoading={isLoading}
           />
         </div>
       </Content>

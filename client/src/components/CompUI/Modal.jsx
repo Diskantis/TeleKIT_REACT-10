@@ -5,7 +5,7 @@ import {
   mixinFontFamily,
   mixinFontParams,
 } from "../../styles/style_constants";
-import CustomButton from "./CustomButton";
+import CustomButton from "./Buttons/CustomButton";
 
 const Modal = ({ active, btnName, setActive, children, title }) => {
   return (

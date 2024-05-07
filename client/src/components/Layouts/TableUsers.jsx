@@ -11,7 +11,8 @@ import {
 
 import EditSVG from "../Icons/EditSVG";
 import DeleteSVG from "../Icons/DeleteSVG";
-import { BtnDel, BtnEdit } from "../CompUI/CustomButton";
+
+import { BtnEdit, BtnDel } from "../CompUI/Buttons/CustomButton";
 import Modal from "../CompUI/Modal";
 import FormEditUser from "./FormEditUser";
 

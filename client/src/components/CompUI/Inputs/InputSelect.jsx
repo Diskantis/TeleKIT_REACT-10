@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
-import { useClickOutside } from "../Hooks/useClickOutside";
+import { useClickOutside } from "../../Hooks/useClickOutside";
 
 import styled from "styled-components/macro";
 import {
   Color,
   mixinFontParams,
   mixinFontFamily,
-} from "../../styles/style_constants";
+} from "../../../styles/style_constants";
 
 const InputSelect = ({
   name,

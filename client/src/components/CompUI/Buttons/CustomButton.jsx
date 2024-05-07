@@ -4,7 +4,7 @@ import {
   Color,
   mixinFontParams,
   mixinFontFamily,
-} from "../../styles/style_constants";
+} from "../../../styles/style_constants";
 
 const CustomButton = ({ name, type, width, onClick }) => {
   return (

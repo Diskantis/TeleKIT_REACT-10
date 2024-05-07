@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FormRow } from "./FormContainer";
 
-import InputCreate from "../CompUI/InputCreate";
-import InputSelect from "../CompUI/InputSelect";
+import InputCreate from "../CompUI/Inputs/InputCreate";
+import InputSelect from "../CompUI/Inputs/InputSelect";
 
 const FormEditUser = (user) => {
   const [lastName, setLastName] = useState("");
@@ -21,7 +21,15 @@ const FormEditUser = (user) => {
       setPassword(user.user.password);
       setRole(user.user.role);
     }
-  }, [setLastName, setFirstName, setSurName, setEmail, setPassword, setRole]);
+  }, [
+    user,
+    setLastName,
+    setFirstName,
+    setSurName,
+    setEmail,
+    setPassword,
+    setRole,
+  ]);
 
   return (
     <>

@@ -4,7 +4,7 @@ import {
   Color,
   mixinFontParams,
   mixinFontFamily,
-} from "../../styles/style_constants";
+} from "../../../styles/style_constants";
 
 const InputCreate = ({ name, value, type, width, ...props }) => {
   if (type === "tel") value = value.replace(/[^+\d]/g, "");

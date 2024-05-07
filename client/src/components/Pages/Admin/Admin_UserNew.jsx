@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import FormContainer, { FormRow } from "../../Layouts/FormContainer";
 
-import InputCreate from "../../CompUI/InputCreate";
-import InputSelect from "../../CompUI/InputSelect";
-import CustomButton from "../../CompUI/CustomButton";
+import InputCreate from "../../CompUI/Inputs/InputCreate";
+import InputSelect from "../../CompUI/Inputs/InputSelect";
+import CustomButton from "../../CompUI/Buttons/CustomButton";
 
 import {
   useLazyGetAllUsersQuery,

@@ -4,7 +4,7 @@ import {
   Color,
   mixinFontParams,
   mixinFontFamily,
-} from "../../styles/style_constants";
+} from "../../../styles/style_constants";
 
 const InputAuth = ({ type, name, value, selInput, ...props }) => {
   return (
@@ -55,7 +55,7 @@ const Label = styled.label`
       : `${mixinFontParams({ size: "1rem", height: "1rem" })}`};
   color: ${(props) =>
     props.selected === props.type || props.value !== ""
-      ? `${Color.btn_submit}`
+      ? `${Color.label_auth}`
       : `${Color.body_text}`};
   transform: translate(0, 0);
   cursor: text;

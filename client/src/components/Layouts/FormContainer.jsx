@@ -20,6 +20,7 @@ export default FormContainer;
 export const FormContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const FormTitleStyled = styled.div`
@@ -31,6 +32,8 @@ export const FormTitleStyled = styled.div`
 `;
 
 export const FormContentStyled = styled.div`
+  display: flex;
+  justify-content: center;
   width: calc(100vw - 370px);
   height: calc(100vh - 200px);
   overflow-x: auto;

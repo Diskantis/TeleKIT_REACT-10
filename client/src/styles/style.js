@@ -22,4 +22,14 @@ export const GlobalStyle = createGlobalStyle`
     height: 100vh;
     background-color: ${Color.body_bg};
   }
+
+  video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto !important;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+  }
 `;
