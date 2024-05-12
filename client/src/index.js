@@ -10,7 +10,9 @@ import App from "./app/App";
 import AuthGuard from "./app/features/authGuard";
 
 // Rages
-import Login from "./components/Pages/Login";
+import SignInReg from "./components/Pages/SignInReg/SignInReg";
+import Login from "./components/Pages/SignInReg/Login";
+import Register from "./components/Pages/SignInReg/Register";
 
 import Main from "./components/Pages/Main";
 import Schedule from "./components/Pages/Schedule";
@@ -31,9 +33,19 @@ import RecipientList from "./components/Pages/Recipients/RecipientList";
 
 const router = createBrowserRouter([
   {
-    path: Paths.LOGIN_ROUTE,
+    path: "/",
     element: <App />,
-    children: [{ path: Paths.LOGIN_ROUTE, element: <Login /> }],
+    // children: [{ path: Paths.LOGIN_ROUTE, element: <Login /> }],
+    children: [
+      {
+        path: "/",
+        element: <SignInReg />,
+        children: [
+          { path: Paths.LOGIN_ROUTE, element: <Login /> },
+          { path: Paths.REGISTER_ROUTE, element: <Register /> },
+        ],
+      },
+    ],
   },
   {
     path: "/",
@@ -85,3 +97,4 @@ root.render(
 );
 
 // "client": "cd ../client ; npm run start",
+// "cd .. && npm start --prefix client ",

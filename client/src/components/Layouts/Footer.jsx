@@ -7,8 +7,14 @@ import {
   mixinFontFamily,
 } from "../../styles/style_constants";
 
-const Footer = ({ children }) => {
-  return <FooterStyled>{children}</FooterStyled>;
+const Footer = () => {
+  return (
+    <FooterStyled>
+      {"© "}
+      {new Date().getFullYear()}
+      {""}
+    </FooterStyled>
+  );
 };
 
 export default Footer;
@@ -23,4 +29,5 @@ const FooterStyled = styled.div`
   color: ${Color.body_text};
   ${mixinFontFamily("Roboto")}
   ${mixinFontParams({ size: "1rem", weight: 600, spacing: "2px" })}
+    cursor: default;
 `;

@@ -76,6 +76,7 @@ const SelectHeader = styled.input`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: default;
   color: ${Color.table_text};
   background-color: ${Color.input_create_bg};
   border: 1px solid ${Color.table_inputBorder};

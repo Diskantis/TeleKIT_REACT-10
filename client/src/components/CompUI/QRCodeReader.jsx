@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Html5Qrcode } from "html5-qrcode";
-import "./QRCodeReader.css";
 import styled from "styled-components/macro";
 
 const QrCodeReader = () => {

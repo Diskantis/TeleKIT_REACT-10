@@ -17,7 +17,7 @@ const Admin_UserNew = () => {
   const [surName, setSurName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("ADMIN");
+  const [role, setRole] = useState("GUEST");
 
   const [register, { isLoading }] = useRegisterMutation();
   const [triggerGetAllUsers] = useLazyGetAllUsersQuery();
@@ -87,7 +87,7 @@ const Admin_UserNew = () => {
           width={"100px"}
           role={role}
           setRole={setRole}
-          options={[{ value: "ADMIN" }, { value: "USER" }]}
+          options={[{ value: "GUEST" }, { value: "USER" }, { value: "ADMIN" }]}
         />
       </FormRow>
       <CustomButton

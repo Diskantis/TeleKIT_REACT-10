@@ -7,15 +7,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 добавил аватарку к current user">
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_4_1714327956484.png" afterDir="false" />
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 refact button">
+      <change afterPath="$PROJECT_DIR$/TEMP/SignIn.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/SignIn/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/SignIn/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMP/SignIn/SignInReg.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/FilledInputMUI.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/TextFieldMUI.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/FormLoginAnt.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_10_1714751843029.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_11_1714751877314.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_12_1714751903987.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_13_1714751935216.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_14_1714751975960.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_4_1714750568783.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_5_1714751617964.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_6_1714751650521.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_7_1714751699148.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_8_1714751770808.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/admin_9_1714751809179.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/BtnSub.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/ButtonSubmit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/ButtonSubmit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/InputAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/useFormHook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Hooks/useFormHook.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonAnt.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonEditAnt.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonEditAnt.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonMUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonMUI.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonRBoot.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/InputSelect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/InputSelect.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/QRCodeReader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/QRCodeReader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/QRCodeReader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/style_constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/style_constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploads/admin_2_1714641996598.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploads/admin_4_1714327956484.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +67,8 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="JSX File" />
       </list>
     </option>
@@ -70,53 +110,53 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.8",
-    "last_opened_file_path": "D:/3_IT PROGER/1_PROJECT/1_HTML&CSS/1_REACT/TeleKIT_REACT-10.1",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Run",
-    "npm.server.executor": "Run",
-    "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.6.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/3_IT PROGER/1_PROJECT/1_HTML&amp;CSS/1_REACT/TeleKIT_REACT-10/client/src/components/Pages&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.server.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Pages" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\CompUI" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\Pages" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\Pages\Kits" />
       <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\Pages\Recipients" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\Pages\Equipments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\app" />
-      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_bro\src\components\App" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\client_app\src" />
-      <recent name="G:\IT_PROJECT\TeleKIT_REACT-10\server" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\TEMP" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Pages\SignIn" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\CompUI\Button" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\CompUI\Input" />
+      <recent name="D:\3_IT PROGER\1_PROJECT\1_HTML&amp;CSS\1_REACT\TeleKIT_REACT-10\client\src\components\Hooks" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -153,12 +193,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.server" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.server" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -184,8 +231,16 @@
       <workItem from="1714234791073" duration="1163000" />
       <workItem from="1714288840852" duration="15007000" />
       <workItem from="1714306532648" duration="11008000" />
-      <workItem from="1714326572963" duration="3095000" />
+      <workItem from="1714326572963" duration="4167000" />
+      <workItem from="1714544774236" duration="11872000" />
+      <workItem from="1714749431362" duration="344000" />
       <workItem from="1714375868089" duration="38000" />
+      <workItem from="1714798498821" duration="14298000" />
+      <workItem from="1714813107302" duration="21969000" />
+      <workItem from="1715014484671" duration="6114000" />
+      <workItem from="1715319186775" duration="41485000" />
+      <workItem from="1715436840672" duration="8702000" />
+      <workItem from="1715496470556" duration="18382000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -235,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714318706821</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="28.04.24 refact button">
+      <option name="closed" value="true" />
+      <created>1714331581148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714331581148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +325,7 @@
     <MESSAGE value="28.04.24 настроил аутентификацию и регистрацию" />
     <MESSAGE value="28.04.24 server добавил метод getOneUser" />
     <MESSAGE value="28.04.24 добавил аватарку к current user" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 добавил аватарку к current user" />
+    <MESSAGE value="28.04.24 refact button" />
+    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 refact button" />
   </component>
 </project>

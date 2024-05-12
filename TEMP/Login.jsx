@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components/macro";
-import { mixinFontParams } from "../../styles/style_constants";
+import { mixinFontParams } from "../client/src/styles/style_constants";
 
-import Page from "../Layouts/Page";
-import SideBar from "../Layouts/SideBar";
-import Content from "../Layouts/Content";
+import Page from "../client/src/components/Layouts/Page";
+import SideBar from "../client/src/components/Layouts/SideBar";
+import Content from "../client/src/components/Layouts/Content";
 
-import InputAuth from "../CompUI/Inputs/InputAuth";
-import ButtonSubMUI from "../CompUI/Buttons/ButtonMUI";
+import InputAuth from "../client/src/components/CompUI/Inputs/InputAuth";
+import ButtonSubMUI from "../client/src/components/CompUI/Buttons/ButtonMUI";
 
-import { Paths } from "../../routers";
+import { Paths } from "../client/src/routers";
 import {
   useLazyCurrentQuery,
   useLoginMutation,
-} from "../../app/services/userApi";
-import InputMui from "../CompUI/Inputs/InputMUI";
+} from "../client/src/app/services/userApi";
+import InputMui from "../client/src/components/CompUI/Inputs/InputMUI";
 
 const Login = () => {
   const [email, setEmail] = useState("");

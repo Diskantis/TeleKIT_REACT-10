@@ -2,7 +2,8 @@ export const BASE_URL =
   process.env.NODE_ENV === "production" ? "none" : "http://localhost:5000";
 
 export const Paths = {
-  LOGIN_ROUTE: "/login",
+  LOGIN_ROUTE: "login",
+  REGISTER_ROUTE: "register",
   MAIN_ROUTE: "/",
   SCHEDULE_ROUTE: "schedule",
 
