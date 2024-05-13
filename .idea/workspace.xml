@@ -7,56 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="28.04.24 refact button">
-      <change afterPath="$PROJECT_DIR$/TEMP/SignIn.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/SignIn/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/SignIn/Register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMP/SignIn/SignInReg.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/FilledInputMUI.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/TextFieldMUI.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/FormLoginAnt.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_10_1714751843029.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_11_1714751877314.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_12_1714751903987.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_13_1714751935216.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_14_1714751975960.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_4_1714750568783.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_5_1714751617964.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_6_1714751650521.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_7_1714751699148.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_8_1714751770808.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/admin_9_1714751809179.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9645bbd6-ab45-45c8-9aeb-0fe3f26062f4/storage_v2/_src_/database/tele_kit.wSzlrg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonAnt.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonEditAnt.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonEditAnt.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonMUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonMUI.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Buttons/ButtonRBoot.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/InputSelect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/InputSelect.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/QRCodeReader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/QRCodeReader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/QRCodeReader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layouts/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserNew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Equipments/EquipmentNew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/style_constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/style_constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/admin_2_1714641996598.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/admin_4_1714327956484.png" beforeDir="false" />
-    </list>
+    <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="12.05.24 refact: form Login; add form Register" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +191,7 @@
       <workItem from="1715014484671" duration="6114000" />
       <workItem from="1715319186775" duration="41485000" />
       <workItem from="1715436840672" duration="8702000" />
-      <workItem from="1715496470556" duration="18382000" />
+      <workItem from="1715496470556" duration="18657000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -298,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714331581148</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="12.05.24 refact: form Login; add form Register">
+      <option name="closed" value="true" />
+      <created>1715517465067</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715517465067</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +285,7 @@
     <MESSAGE value="28.04.24 server добавил метод getOneUser" />
     <MESSAGE value="28.04.24 добавил аватарку к current user" />
     <MESSAGE value="28.04.24 refact button" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.04.24 refact button" />
+    <MESSAGE value="12.05.24 refact: form Login; add form Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.05.24 refact: form Login; add form Register" />
   </component>
 </project>
