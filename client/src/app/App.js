@@ -26,11 +26,12 @@ function App() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      if (location.pathname === "/") {
-        navigate(Paths.LOGIN_ROUTE);
-      } else if (location.pathname === "/register") {
-        navigate(Paths.REGISTER_ROUTE);
-      }
+      // if (location.pathname === "/") {
+      //   navigate(Paths.LOGIN_ROUTE);
+      // } else if (location.pathname === "/register") {
+      //   navigate(Paths.REGISTER_ROUTE);
+      // }
+      navigate(Paths.LOGIN_ROUTE);
     }
   }, [isAuthenticated, navigate]);
 

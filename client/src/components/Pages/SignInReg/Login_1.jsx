@@ -122,7 +122,8 @@ const Login = () => {
       <CssBaseline />
       <Box
         sx={{
-          my: 8,
+          my: 4,
+          width: "590px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -138,7 +139,7 @@ const Login = () => {
           <FormControl
             sx={{ mt: 2, width: "100%" }}
             variant="filled"
-            margin="normal"
+            size="small"
             required
           >
             <InputLabelStl error={emailError} htmlFor="email">
@@ -160,7 +161,12 @@ const Login = () => {
               value={emailInput}
             />
           </FormControl>
-          <FormControl sx={{ mt: 2, width: "100%" }} variant="filled" required>
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+            required
+          >
             <InputLabelStl error={passwordError} htmlFor="password">
               Пароль
             </InputLabelStl>
@@ -195,6 +201,7 @@ const Login = () => {
           <ButtonSubMUI
             type="submit"
             name="Войти"
+            width="590px"
             variant="contained"
             fullWidth
             startIcon={<LoginIcon />}
@@ -240,7 +247,7 @@ const Login = () => {
 
 export default Login;
 
-const InputLabelStl = styled(InputLabel)({
+export const InputLabelStl = styled(InputLabel)({
   color: Color.label_auth ?? Color.label_auth_err,
   "&.Mui-focused": {
     color: Color.label_auth ?? Color.label_auth_err,
@@ -250,7 +257,7 @@ const InputLabelStl = styled(InputLabel)({
   },
 });
 
-const FilledInputStl = styled(FilledInput)(({ border }) => ({
+export const FilledInputStl = styled(FilledInput)(({ border }) => ({
   backgroundColor: Color.input_auth_bg,
   color: Color.body_text,
   "&.MuiFilledInput-root": {

@@ -10,54 +10,35 @@ import ButtonSubMUI from "../../CompUI/Buttons/ButtonMUI";
 
 import { Box, Link, Grid, Avatar, Typography } from "@mui/material";
 
-import {
-  Alert,
-  FilledInput,
-  FormControl,
-  IconButton,
-  InputAdornment,
-  InputLabel,
-  Stack,
-} from "@mui/material";
+import { Alert, FormControl, Stack } from "@mui/material";
+import { FilledInputStl, InputLabelStl } from "./Login";
 
-import LoginIcon from "@mui/icons-material/Login";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 import { Paths } from "../../../routers";
-import {
-  useLazyCurrentQuery,
-  useLoginMutation,
-} from "../../../app/services/userApi";
 
 const Register = () => {
-  const [login] = useLoginMutation();
-  const [triggerCurrentQuery] = useLazyCurrentQuery();
   const navigate = useNavigate();
 
   // Email Validation
   // const isEmail =
   // (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
 
-  const [showPassword, setShowPassword] = React.useState(false);
-
   //Inputs
-  const [emailInput, setEmailInput] = useState("");
-  const [passwordInput, setPasswordInput] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [surName, setSurName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [role, setRole] = useState("GUEST");
 
   // Inputs Errors
+  // const [lastNameError, setLastNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
 
   // Overall Form Validity
   const [formValid, setFormValid] = useState("");
-  const [success, setSuccess] = useState("");
-
-  // Handles Display and Hide Password
-  const handleClickShowPassword = () => setShowPassword((show) => !show);
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
 
   // Validation for onBlur Email
   const handleEmail = () => {
@@ -71,11 +52,7 @@ const Register = () => {
 
   // Validation for onBlur Password
   const handlePassword = () => {
-    if (
-      !passwordInput ||
-      passwordInput.length < 5 ||
-      passwordInput.length > 20
-    ) {
+    if (!password || password.length < 5 || password.length > 20) {
       setPasswordError(true);
       return;
     }
@@ -85,17 +62,16 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    setSuccess(null);
 
     // Если ошибка в Email
-    if (emailError || !emailInput) {
+    if (emailError || !email) {
       setEmailError(true);
       setFormValid('Вы не ввели email. Введите "Email"');
       return;
     }
 
     // Если ошибка в Password
-    if (passwordError || !passwordInput) {
+    if (passwordError || !password) {
       setPasswordError(true);
       setFormValid(
         'Пароль должен быть в диапазоне от 5 до 20 символов. Введите "Пароль"',
@@ -104,12 +80,18 @@ const Register = () => {
     }
     setFormValid(null);
 
-    const email = data.get("email");
-    const password = data.get("password");
+    // const email = data.get("email");
+    // const password = data.get("password");
+    console.log({
+      lastName: data.get("lastName"),
+      firstName: data.get("firstName"),
+      surName: data.get("surName"),
+      email: data.get("email"),
+      password: data.get("password"),
+      role: data.get("role"),
+    });
     try {
-      await login({ email, password }).unwrap();
-      await triggerCurrentQuery().unwrap();
-      navigate(Paths.MAIN_ROUTE);
+      // navigate(Paths.MAIN_ROUTE);
     } catch (err) {
       setEmailError(true);
       setPasswordError(true);
@@ -122,7 +104,8 @@ const Register = () => {
       <CssBaseline />
       <Box
         sx={{
-          my: 8,
+          my: 4,
+          width: "590px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -135,63 +118,135 @@ const Register = () => {
           Регистрация
         </Typography>
         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
-          {/*<FormControl*/}
-          {/*  sx={{ mt: 2, width: "100%" }}*/}
-          {/*  variant="filled"*/}
-          {/*  margin="normal"*/}
-          {/*  required*/}
-          {/*>*/}
-          {/*  <InputLabelStl error={emailError} htmlFor="email">*/}
-          {/*    Email*/}
-          {/*  </InputLabelStl>*/}
-          {/*  <FilledInputStl*/}
-          {/*    name="email"*/}
-          {/*    id="email"*/}
-          {/*    type="text"*/}
-          {/*    fullWidth*/}
-          {/*    autoComplete="email"*/}
-          {/*    autoFocus*/}
-          {/*    error={emailError}*/}
-          {/*    border={emailError ? "transparent" : Color.input_auth_border}*/}
-          {/*    onBlur={handleEmail}*/}
-          {/*    onChange={(event) => {*/}
-          {/*      setEmailInput(event.target.value);*/}
-          {/*    }}*/}
-          {/*    value={emailInput}*/}
-          {/*  />*/}
-          {/*</FormControl>*/}
-          {/*<FormControl sx={{ mt: 2, width: "100%" }} variant="filled" required>*/}
-          {/*  <InputLabelStl error={passwordError} htmlFor="password">*/}
-          {/*    Пароль*/}
-          {/*  </InputLabelStl>*/}
-          {/*  <FilledInputStl*/}
-          {/*    name="password"*/}
-          {/*    id="password"*/}
-          {/*    type={showPassword ? "text" : "password"}*/}
-          {/*    fullWidth*/}
-          {/*    autoComplete="current-password"*/}
-          {/*    error={passwordError}*/}
-          {/*    border={passwordError ? "transparent" : Color.input_auth_border}*/}
-          {/*    onBlur={handlePassword}*/}
-          {/*    onChange={(event) => {*/}
-          {/*      setPasswordInput(event.target.value);*/}
-          {/*    }}*/}
-          {/*    value={passwordInput}*/}
-          {/*    endAdornment={*/}
-          {/*      <InputAdornment position="end">*/}
-          {/*        <IconButton*/}
-          {/*          color={passwordError ? "error" : "primary"}*/}
-          {/*          aria-label="toggle password visibility"*/}
-          {/*          onClick={handleClickShowPassword}*/}
-          {/*          onMouseDown={handleMouseDownPassword}*/}
-          {/*          edge="end"*/}
-          {/*        >*/}
-          {/*          {showPassword ? <VisibilityOff /> : <Visibility />}*/}
-          {/*        </IconButton>*/}
-          {/*      </InputAdornment>*/}
-          {/*    }*/}
-          {/*  />*/}
-          {/*</FormControl>*/}
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+            // margin="dense"
+            // required
+          >
+            <InputLabelStl htmlFor="lastName">Фамилия</InputLabelStl>
+            <FilledInputStl
+              name="lastName"
+              id="lastName"
+              type="text"
+              fullWidth
+              autoComplete="lastName"
+              autoFocus
+              // error={lastNameError}
+              border={Color.input_auth_border}
+              // onBlur={handleEmail}
+              onChange={(event) => {
+                setLastName(event.target.value);
+              }}
+              value={lastName}
+            />
+          </FormControl>
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+          >
+            <InputLabelStl htmlFor="firstName">Имя</InputLabelStl>
+            <FilledInputStl
+              name="firstName"
+              id="firstName"
+              type="text"
+              fullWidth
+              border={Color.input_auth_border}
+              onChange={(event) => {
+                setFirstName(event.target.value);
+              }}
+              value={firstName}
+            />
+          </FormControl>
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+          >
+            <InputLabelStl htmlFor="surName">Отчество</InputLabelStl>
+            <FilledInputStl
+              name="surName"
+              id="surName"
+              type="text"
+              fullWidth
+              border={Color.input_auth_border}
+              onChange={(event) => {
+                setSurName(event.target.value);
+              }}
+              value={surName}
+            />
+          </FormControl>
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+            required
+          >
+            <InputLabelStl error={emailError} htmlFor="email">
+              Email
+            </InputLabelStl>
+            <FilledInputStl
+              name="email"
+              id="email"
+              type="text"
+              fullWidth
+              autoComplete="email"
+              error={emailError}
+              border={emailError ? "transparent" : Color.input_auth_border}
+              onBlur={handleEmail}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+              value={email}
+            />
+          </FormControl>
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+            required
+          >
+            <InputLabelStl error={passwordError} htmlFor="password">
+              Пароль
+            </InputLabelStl>
+            <FilledInputStl
+              name="password"
+              id="password"
+              type="text"
+              fullWidth
+              autoComplete="current-password"
+              error={passwordError}
+              border={passwordError ? "transparent" : Color.input_auth_border}
+              onBlur={handlePassword}
+              onChange={(event) => {
+                setPassword(event.target.value);
+              }}
+              value={password}
+            />
+          </FormControl>
+          <FormControl
+            sx={{ mt: 2, width: "100%" }}
+            variant="filled"
+            size="small"
+            // disabled
+          >
+            <InputLabelStl htmlFor="role">
+              Роль (нельзя изменить на этапе регистрации)
+            </InputLabelStl>
+            <FilledInputStl
+              name="role"
+              id="role"
+              type="text"
+              fullWidth
+              border={Color.input_auth_border}
+              // onChange={(event) => {
+              //   setRole(event.target.value);
+              // }}
+              value={role}
+            />
+          </FormControl>
           <ButtonSubMUI
             type="submit"
             name="Зарегистрировать"
@@ -213,18 +268,18 @@ const Register = () => {
             </Stack>
           )}
 
-          {/* Show Success if no issues */}
-          {success && (
-            <Stack sx={{ width: "100%", pt: 1 }} spacing={2}>
-              <Alert
-                severity="success"
-                size="small"
-                sx={{ color: Color.body_text }}
-              >
-                {success}
-              </Alert>
-            </Stack>
-          )}
+          {/*/!* Show Success if no issues *!/*/}
+          {/*{success && (*/}
+          {/*  <Stack sx={{ width: "100%", pt: 1 }} spacing={2}>*/}
+          {/*    <Alert*/}
+          {/*      severity="success"*/}
+          {/*      size="small"*/}
+          {/*      sx={{ color: Color.body_text }}*/}
+          {/*    >*/}
+          {/*      {success}*/}
+          {/*    </Alert>*/}
+          {/*  </Stack>*/}
+          {/*)}*/}
           <Grid container sx={{ justifyContent: "center", pt: 1 }}>
             <Grid item>
               <Link href={Paths.LOGIN_ROUTE} variant="body2">

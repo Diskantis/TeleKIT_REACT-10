@@ -11,8 +11,8 @@ import AuthGuard from "./app/features/authGuard";
 
 // Rages
 import SignInReg from "./components/Pages/SignInReg/SignInReg";
-import Login from "./components/Pages/SignInReg/Login";
-import Register from "./components/Pages/SignInReg/Register";
+// import Login from "./components/Pages/SignInReg/Login";
+// import Register from "./components/Pages/SignInReg/Register";
 
 import Main from "./components/Pages/Main";
 import Schedule from "./components/Pages/Schedule";
@@ -33,19 +33,20 @@ import RecipientList from "./components/Pages/Recipients/RecipientList";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: Paths.LOGIN_ROUTE,
     element: <App />,
     // children: [{ path: Paths.LOGIN_ROUTE, element: <Login /> }],
-    children: [
-      {
-        path: "/",
-        element: <SignInReg />,
-        children: [
-          { path: Paths.LOGIN_ROUTE, element: <Login /> },
-          { path: Paths.REGISTER_ROUTE, element: <Register /> },
-        ],
-      },
-    ],
+    children: [{ path: Paths.LOGIN_ROUTE, element: <SignInReg /> }],
+    // children: [
+    //   {
+    //     path: "/",
+    //     element: <SignInReg />,
+    //     children: [
+    //       { path: Paths.LOGIN_ROUTE, element: <Login /> },
+    //       { path: Paths.REGISTER_ROUTE, element: <Register /> },
+    //     ],
+    //   },
+    // ],
   },
   {
     path: "/",
