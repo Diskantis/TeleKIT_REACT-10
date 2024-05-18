@@ -7,19 +7,34 @@ import {
 } from "../../styles/style_constants";
 import CustomButton from "./Buttons/CustomButton";
 
-const Modal = ({ active, btnName, setActive, children, title }) => {
+const Modal = ({
+  type,
+  active,
+  btnName,
+  setActive,
+  onRemoveUser,
+  children,
+  title,
+}) => {
   return (
     <ModalWin $active={active} onClick={() => setActive(false)}>
       <ModalContent $active={active} onClick={(e) => e.stopPropagation()}>
         <ModalTitle>{title}</ModalTitle>
         {children}
         <FormRowStyled>
-          <CustomButton name={btnName} type="save" width="150px" />
+          <CustomButton
+            name={btnName}
+            type={type}
+            width="150px"
+            onClick={onRemoveUser}
+          />
           <CustomButton
             name="Отмена"
             type="cancel"
             width="150px"
-            onClick={() => setActive(false)}
+            onClick={() => {
+              setActive(false);
+            }}
           />
         </FormRowStyled>
       </ModalContent>
@@ -49,10 +64,10 @@ const ModalContent = styled.div`
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 250px;
-  width: 35vw;
+  //top: 250px;
+  width: 30vw;
   margin-left: 330px;
-  padding: 20px;
+  padding-top: 20px;
   border-radius: 12px;
   background-color: ${Color.page_bg};
 
@@ -64,7 +79,7 @@ const ModalTitle = styled.div`
   color: ${Color.body_text};
   ${mixinFontFamily("Roboto")}
   ${mixinFontParams({ size: "1.3rem" })}
-  text-align: center;
+    text-align: center;
 `;
 
 export const FormRowStyled = styled.div`

@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import { styled } from "@mui/material/styles";
-import { Color } from "../../../styles/style_constants";
+import { Color } from "../../styles/style_constants";
 
-import Content from "../../Layouts/Content";
-import ButtonSubMUI from "../../CompUI/Buttons/ButtonMUI";
+import Content from "../Layouts/Content";
+import ButtonSubMUI from "../CompUI/Buttons/ButtonMUI";
 
 import { Box, Link, Grid, Avatar, Typography } from "@mui/material";
 
@@ -24,22 +24,23 @@ import LoginIcon from "@mui/icons-material/Login";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
-import { Paths } from "../../../routers";
+import { Paths } from "../../routers";
 import {
   useLazyCurrentQuery,
   useLazyGetAllUsersQuery,
   useLoginMutation,
   useRegisterMutation,
-} from "../../../app/services/userApi";
-import Page from "../../Layouts/Page";
-import SideBar from "../../Layouts/SideBar";
+} from "../../app/services/userApi";
+import Page from "../Layouts/Page";
+import SideBar from "../Layouts/SideBar";
 
 const SignInReg = () => {
   const [register, setRegister] = useState(false);
 
   const [login] = useLoginMutation();
-  const [regis, { isLoading }] = useRegisterMutation();
+  const [regis] = useRegisterMutation();
   const [triggerCurrentQuery] = useLazyCurrentQuery();
+  const [triggerGetAllUsers] = useLazyGetAllUsersQuery();
   const navigate = useNavigate();
 
   // Email Validation
@@ -54,7 +55,7 @@ const SignInReg = () => {
   const [surName, setSurName] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
-  const [role, setRole] = useState("GUEST");
+  const [role] = useState("GUEST");
 
   // Inputs Errors
   const [emailError, setEmailError] = useState(false);
@@ -126,6 +127,7 @@ const SignInReg = () => {
       if (!register) {
         await login({ email, password }).unwrap();
         await triggerCurrentQuery().unwrap();
+        await triggerGetAllUsers().unwrap();
         navigate(Paths.MAIN_ROUTE);
       } else {
         await regis({
@@ -192,7 +194,6 @@ const SignInReg = () => {
                     type="text"
                     fullWidth
                     autoComplete="lastName"
-                    // autoFocus
                     border={Color.input_auth_border}
                     onChange={(event) => {
                       setLastName(event.target.value);
@@ -317,6 +318,9 @@ const SignInReg = () => {
                   type="text"
                   fullWidth
                   border={Color.input_auth_border}
+                  // onChange={(event) => {
+                  //   setRole(event.target.value);
+                  // }}
                   value={role}
                 />
               </FormControl>

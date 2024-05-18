@@ -10,7 +10,7 @@ import App from "./app/App";
 import AuthGuard from "./app/features/authGuard";
 
 // Rages
-import SignInReg from "./components/Pages/SignInReg/SignInReg";
+import SignInReg from "./components/Pages/SignInReg";
 // import Login from "./components/Pages/SignInReg/Login";
 // import Register from "./components/Pages/SignInReg/Register";
 

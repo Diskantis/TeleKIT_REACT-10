@@ -3,9 +3,14 @@ import React from "react";
 import { Input, inputClasses } from "@mui/base/Input";
 import { styled } from "@mui/system";
 
+const InputMui = () => {
+  return <StyledInput placeholder="Write your name here" />;
+};
+
+export default InputMui;
+
 const StyledInput = styled(Input)(
   ({ theme }) => `
-
   .${inputClasses.input} {
     width: 320px;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -26,8 +31,9 @@ const StyledInput = styled(Input)(
     }
 
     &:focus {
-      outline: 0;
-      border-color: ${blue[400]};
+      outline: 5px;
+      // border-color: ${blue[400]};
+      // border-style: none;
       box-shadow: 0 0 0 3px ${
         theme.palette.mode === "dark" ? blue[600] : blue[200]
       };
@@ -35,12 +41,6 @@ const StyledInput = styled(Input)(
   }
 `,
 );
-
-const InputMui = () => {
-  return <StyledInput placeholder="Write your name here" />;
-};
-
-export default InputMui;
 
 const blue = {
   100: "#DAECFF",

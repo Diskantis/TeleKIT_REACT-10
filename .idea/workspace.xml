@@ -8,14 +8,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35fad474-b755-4d4c-a179-59afc4d18ef9" name="Changes" comment="13.05.24 delete: folder TEMP">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg_1.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/DataGridEdit.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Layouts/DataGridUsers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Login_1.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/InputMUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Inputs/InputMUI.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CompUI/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CompUI/Modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Admin/Admin_UserList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Login_1.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/Register.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/SignInReg.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/SignInReg/SignInReg_1.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +87,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "21.6.2",
-    "javascript.nodejs.core.library.typings.version": "20.12.8",
+    "javascript.nodejs.core.library.configured.version": "20.10.0",
+    "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "D:/3_IT PROGER/1_PROJECT/1_HTML&CSS/1_REACT/TeleKIT_REACT-10/client/src/components/Pages/SignInReg",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -95,7 +103,7 @@
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\prettier",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -161,13 +169,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -202,6 +203,7 @@
       <workItem from="1715319186775" duration="41485000" />
       <workItem from="1715436840672" duration="8702000" />
       <workItem from="1715496470556" duration="32974000" />
+      <workItem from="1715874860250" duration="45923000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
